@@ -20,20 +20,8 @@ const Login:React.FC<LoginProps> = () => {
     //Firebase login
     const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-
         signInWithEmailAndPassword(loginform.email, loginform.password)
     };
-
-    // const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    //     event.preventDefault();
-    //     if (formError) setFormError("");
-    //     if (!form.email.includes("@")) {
-    //       return setFormError("Please enter a valid email");
-    //     }
-    
-    //     // Valid form inputs
-    //     signInWithEmailAndPassword(form.email, form.password);
-    // };
 
     const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         //update form state
@@ -42,15 +30,6 @@ const Login:React.FC<LoginProps> = () => {
             [event.target.name]: event.target.value,
         }))
     };
-
-    // const onChange = ({
-    //     target: { name, value },
-    //   }: React.ChangeEvent<HTMLInputElement>) => {
-    //     setForm((prev) => ({
-    //       ...prev,
-    //       [name]: value,
-    //     }));
-    // };
 
     return (
         <form onSubmit={onSubmit}>
@@ -126,7 +105,6 @@ const Login:React.FC<LoginProps> = () => {
                             ...prev,
                             view: "resetPassword",
                     }))}
-                    // onClick={() => toggleView("resetPassword")}
                 >
                     Reset
                 </Text>
@@ -143,7 +121,6 @@ const Login:React.FC<LoginProps> = () => {
                             view: "signup",
                         }))
                     }
-                    // onClick={() => toggleView("signup")}
                 >
                 SIGN UP
                 </Text>

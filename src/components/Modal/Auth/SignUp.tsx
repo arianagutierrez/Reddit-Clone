@@ -36,22 +36,6 @@ const SignUp:React.FC = () => {
         //password match
         createUserWithEmailAndPassword(signUpform.email, signUpform.password)
     };
-
-    // const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    //     event.preventDefault();
-    //     if (formError) setFormError("");
-    //     if (!form.email.includes("@")) {
-    //       return setFormError("Please enter a valid email");
-    //     }
-    
-    //     if (form.password !== form.confirmPassword) {
-    //       return setFormError("Passwords do not match");
-    //     }
-    
-    //     // Valid form inputs
-    //     createUserWithEmailAndPassword(form.email, form.password);
-    // };
-
     const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         //update form state
         setSignUpForm(prev => ({
@@ -59,15 +43,6 @@ const SignUp:React.FC = () => {
             [event.target.name]: event.target.value,
         }))
     };
-    
-    // const onChange = ({
-    //     target: { name, value },
-    //   }: React.ChangeEvent<HTMLInputElement>) => {
-    //     setForm((prev) => ({
-    //       ...prev,
-    //       [name]: value,
-    //     }));
-    // };
 
     const createUserDocument = async (user: User) => {
         await setDoc(
@@ -151,8 +126,6 @@ const SignUp:React.FC = () => {
                 bg="gray.50"
             />
             <Text textAlign="center" mt={2} fontSize="10pt" color="red">
-                {/* {formError ||
-                FIREBASE_ERRORS[authError?.message as keyof typeof FIREBASE_ERRORS]} */}
                 {error || 
                     FIREBASE_ERRORS[userError?.message as keyof typeof FIREBASE_ERRORS]}
             </Text>
@@ -178,7 +151,6 @@ const SignUp:React.FC = () => {
                             view: "login",
                         }))
                     }
-                    // onClick={() => toggleView("login")}
                 >
                 LOG IN
                 </Text>

@@ -12,6 +12,7 @@ import { FaReddit } from 'react-icons/fa';
 import { HiOutlineDotsHorizontal } from 'react-icons/hi';
 import { RiCakeLine } from 'react-icons/ri';
 import { useSetRecoilState } from 'recoil';
+import AuthModal from '../Modal/Auth/AuthModal';
 
 
 type AboutProps = {
@@ -103,7 +104,6 @@ const About:React.FC<AboutProps> = ({communityData}) => {
                         <Button mt={3} height="30px" width="100%">
                             Create Post
                         </Button>
-                    
                     </Link>
 
                     {user?.uid === communityData.creatorId && (

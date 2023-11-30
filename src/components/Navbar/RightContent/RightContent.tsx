@@ -18,7 +18,6 @@ const RightContent:React.FC<RightContentProps> = ({ user }) => {
             <Flex justifyContent="space-between" alignItems="center">
                 {user ? <Icons /> : <AuthButtons />}
                 <UserMenu user={user}/>
-                {/* <MenuWrapper /> */}
             </Flex>
         </>
     )

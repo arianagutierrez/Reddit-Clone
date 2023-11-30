@@ -1,7 +1,8 @@
 import { authModalState } from '@/atoms/AuthModalAtom';
 import { auth } from '@/firebase/clientApp';
+import useDirectory from '@/hooks/useDirectory';
 import { Flex, Icon, Input } from '@chakra-ui/react';
-import router, { useRouter } from 'next/router';
+import { useRouter } from 'next/router';
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { BsLink45Deg } from 'react-icons/bs';
@@ -13,22 +14,22 @@ const CreatePostLink:React.FC = () => {
     const router = useRouter();
     const [user] = useAuthState(auth);
     const setAuthModalState = useSetRecoilState(authModalState);
-    // const { toggleMenuOpen } = useDirectory();
+    const { toggleMenuOpen } = useDirectory();
 
     const onClick = () => {
         if (!user) {
           setAuthModalState({ open: true, view: "login" });
           return;
         }
-        
+
         const { communityId } = router.query;
         if (communityId) {
-          router.push(`/r/${communityId}/submit`);
-          return;
+            router.push(`/r/${communityId}/submit`);
+            return;
         }
-    
-        // open our direcotry menu
-        // toggleMenuOpen();
+        
+        // open our directory menu
+        toggleMenuOpen();
     };
 
     return (

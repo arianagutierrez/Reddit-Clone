@@ -1,54 +1,65 @@
-import { ChevronDownIcon } from '@chakra-ui/icons';
-import React from 'react';
-import { Flex, Icon, Menu, MenuButton, MenuList, Text } from '@chakra-ui/react';
-import { TiHome } from 'react-icons/ti'
-import Communities from './Communities';
+import { ChevronDownIcon } from "@chakra-ui/icons";
+import {
+    Flex,
+    Icon,
+    Image,
+    Menu,
+    MenuButton,
+    MenuList,
+    Text,
+} from "@chakra-ui/react";
+import React from "react";
+import useDirectory from "../../../hooks/useDirectory";
+import Communities from "./Communities";
 
-const Directory:React.FC = () => {
+const Directory: React.FC = () => {
+    const { directoryState, toggleMenuOpen } = useDirectory();
+
     return (
-        <Menu>
+        <Menu isOpen={directoryState.isOpen}>
             <MenuButton
                 cursor="pointer"
                 padding="0px 6px"
-                borderRadius="4px"
-                _hover={{ outline: "1px solid", outlineColor: "gray.200" }}
+                borderRadius={4}
                 mr={2}
                 ml={{ base: 0, md: 2 }}
+                _hover={{ outline: "1px solid", outlineColor: "gray.200" }}
+                onClick={toggleMenuOpen}
             >
-                <Flex 
-                    alignItems="center"
-                    justifyContent="space-between"
+                <Flex
+                    align="center"
+                    justify="space-between"
                     width={{ base: "auto", lg: "200px" }}
                 >
-                    <Flex alignItems="center">
-                        <Icon 
-                        fontSize={24}
-                        mr={{ base: 1, md: 2 }}
-                        as={TiHome}
-                        />
-                        <Flex
-                            display={{ base: "none", lg: "flex" }}
-                            flexDirection="column"
-                            fontSize="10pt"
-                        >
-                            <Text fontWeight={600}>
-                                Home
+                    <Flex align="center">
+                        {directoryState.selectedMenuItem.imageURL ? (
+                            <Image
+                                src={directoryState.selectedMenuItem.imageURL}
+                                borderRadius="full"
+                                boxSize="24px"
+                                mr={2}
+                            />
+                        ) : (
+                            <Icon
+                                fontSize={24}
+                                mr={{ base: 1, md: 2 }}
+                                as={directoryState.selectedMenuItem.icon}
+                                color={directoryState.selectedMenuItem.iconColor}
+                            />
+                        )}
+                        <Flex display={{ base: "none", lg: "flex" }}>
+                            <Text fontWeight={600} fontSize="10pt">
+                                {directoryState.selectedMenuItem.displayText}
                             </Text>
                         </Flex>
                     </Flex>
-                    <ChevronDownIcon color="gray.500" />
+                    <ChevronDownIcon />
                 </Flex>
             </MenuButton>
-            <MenuList 
-                maxHeight="300px" 
-                // overflow="scroll" 
-                // overflowX="hidden"
-            >
-                {/* <Communities menuOpen={isOpen} /> */}
+            <MenuList>
                 <Communities />
             </MenuList>
         </Menu>
-    )
-}
-
+    );
+};
 export default Directory;

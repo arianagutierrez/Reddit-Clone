@@ -25,45 +25,45 @@ const AuthModal:React.FC = () => {
     
     return (
         <>
-        <Modal isOpen={modalState.open} onClose={handleClose}>
-            <ModalOverlay />
-            <ModalContent>
-                <ModalHeader textAlign="center">
-                    {modalState.view === "login" && "Login"}
-                    {modalState.view === "signup" && "Sign Up"}
-                    {modalState.view === "resetPassword" && "Reset Password"}
-                </ModalHeader>
-                <ModalCloseButton />
-                <ModalBody
-                    display="flex"
-                    flexDirection="column"
-                    alignItems="center"
-                    justifyContent="center"
-                    pb={6}
-                >
-                    <Flex
-                        direction="column"
+            <Modal isOpen={modalState.open} onClose={handleClose}>
+                <ModalOverlay />
+                <ModalContent>
+                    <ModalHeader textAlign="center">
+                        {modalState.view === "login" && "Login"}
+                        {modalState.view === "signup" && "Sign Up"}
+                        {modalState.view === "resetPassword" && "Reset Password"}
+                    </ModalHeader>
+                    <ModalCloseButton />
+                    <ModalBody
+                        display="flex"
+                        flexDirection="column"
                         alignItems="center"
                         justifyContent="center"
-                        width="70%"
+                        pb={6}
                     >
-                        {modalState.view === "login" || modalState.view === "signup" ? (
-                            <>
-                                <OAuthButtons />
-                                <Text color="gray.500" fontWeight="700">
-                                    OR
-                                </Text>
-                                <AuthInputs />
-                            </>
-                        ) : (
-                            <ResetPassword toggleView={function (view: ModalView): void {
-                                        throw new Error('Function not implemented.');
-                                    } } />
-                        )}
-                    </Flex>
-                </ModalBody>
-            </ModalContent>
-        </Modal>
+                        <Flex
+                            direction="column"
+                            alignItems="center"
+                            justifyContent="center"
+                            width="70%"
+                        >
+                            {modalState.view === "login" || modalState.view === "signup" ? (
+                                <>
+                                    <OAuthButtons />
+                                    <Text color="gray.500" fontWeight="700">
+                                        OR
+                                    </Text>
+                                    <AuthInputs />
+                                </>
+                            ) : (
+                                <ResetPassword toggleView={function (view: ModalView): void {
+                                    throw new Error('Function not implemented.');
+                                }}/>
+                            )}
+                        </Flex>
+                    </ModalBody>
+                </ModalContent>
+            </Modal>
         </>
     )
 }

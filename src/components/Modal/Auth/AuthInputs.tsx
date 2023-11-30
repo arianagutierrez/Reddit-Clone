@@ -15,12 +15,6 @@ const AuthInputs:React.FC<AuthInputsProps> = () => {
         <Flex direction="column" alignItems="center" width="100%" mt={4}>
           {modalState.view === "login" && <Login/>}
           {modalState.view === "signup" && <SignUp/>}
-          
-          {/* {modalState.view === "login" ? (
-            <Login toggleView={toggleView} />
-          ) : (
-            <SignUp toggleView={toggleView} />
-          )} */}
         </Flex>
       );
 }

@@ -47,11 +47,12 @@ const useCommunityData = () => {
             const snippets = snippetDocs.docs.map((doc) => ({ ...doc.data() }));
             console.log("here are snippets", snippets)
 
-             setCommunityStateValue((prev) => ({
+            //Update the status of the community with newly obtained snippets.
+            setCommunityStateValue((prev) => ({
                 ...prev,
                 mySnippets: snippets as CommunitySnippet[],
-                // snippetsFetched: true,
-             }));
+                snippetsFetched: true, //per indicare che gli snippet sono stati recuperati 'HomePage'
+            }));
         } catch (error: any) {
             console.log("getMySnippets error", error);
             setError(error.message);
@@ -68,7 +69,7 @@ const useCommunityData = () => {
             const newSnippet: CommunitySnippet = {
                 communityId: communityData.id,
                 imageURL: communityData.imageURL || "",
-                // isModerator: user?.uid === communityData.creatorId,
+                isModerator: user?.uid === communityData.creatorId,
             };
 
             batch.set(

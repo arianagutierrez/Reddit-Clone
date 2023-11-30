@@ -108,9 +108,7 @@ const UserMenu:React.FC<UserMenuProps> = ({ user }) => {
                         </Flex>
                     </MenuItem>
                     </>
-                )}
-                {/* {user ? <UserList /> : <NoUserList setModalState={setModalState} />} */}
-                
+                )}                
             </MenuList>
         </Menu>
     )

@@ -23,7 +23,7 @@ type CommentItemProps = {
     comment: Comment;
     onDeleteComment: (comment: Comment) => void;
     loadingDelete: boolean;
-    userId: string;
+    userId: string | null;
 };
 
 const CommentItem: React.FC<CommentItemProps> = ({
