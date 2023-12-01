@@ -32,10 +32,10 @@ const TextInputs: React.FC<TextInputsProps> = ({
                 placeholder="Title"
                 _placeholder={{ color: "gray.500" }}
                 _focus={{
-                outline: "none",
-                bg: "white",
-                border: "1px solid",
-                borderColor: "black",
+                    outline: "none",
+                    bg: "white",
+                    border: "1px solid",
+                    borderColor: "black",
                 }}
             />
             <Textarea
@@ -49,10 +49,10 @@ const TextInputs: React.FC<TextInputsProps> = ({
                 placeholder="Text (optional)"
                 _placeholder={{ color: "gray.500" }}
                 _focus={{
-                outline: "none",
-                bg: "white",
-                border: "1px solid",
-                borderColor: "black",
+                    outline: "none",
+                    bg: "white",
+                    border: "1px solid",
+                    borderColor: "black",
                 }}
             />
             <Flex justify="flex-end">
