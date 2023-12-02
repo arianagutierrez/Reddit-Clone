@@ -20,7 +20,7 @@ export interface CommunitySnippet {
 
 // Definizione dello stato di una comunità nell'applicazione
 interface CommunityState {
-    mySnippets: CommunitySnippet[];         // Elenco di "CommunitySnippet" dell'utente
+    mySnippets: CommunitySnippet[];    // Elenco di "CommunitySnippet" dell'utente
     currentCommunity?: Community;           // Informazioni sulla comunità correntemente selezionata
     snippetsFetched: boolean;               // Flag che indica se le informazioni sulla comunità sono state recuperate
 }

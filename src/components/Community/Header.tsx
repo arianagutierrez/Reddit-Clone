@@ -59,7 +59,7 @@ const Header:React.FC<HeaderProps> = ({ communityData }) => {
                             pl={6}
                             isLoading={loading}
                             onClick={() => onJoinOrLeaveCommunity(communityData, isJoined)}
-                            >
+                        >
                             {isJoined ? "Joined" : "Join"}
                         </Button>
                     </Flex>

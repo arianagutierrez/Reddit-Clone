@@ -31,7 +31,8 @@ const Communities:React.FC<CommunitiesProps> = () => {
                             iconColor="brand.100"
                             imageURL={snippet.imageURL}
                         />
-                    ))}
+                    ))
+                }
             </Box>
             <Box mt={3} mb={4}>
                 <Text pl={3} mb={1} fontSize="7pt" fontWeight={500} color="gray.500">
