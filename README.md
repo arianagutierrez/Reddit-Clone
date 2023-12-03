@@ -5,14 +5,14 @@ This is a [Reddit Clone](https://reddit-clone-ten-gray.vercel.app/) REACTJS proj
 
 Build Technologies: <br/>
 ✅  NEXTJS <br/>
-✅  FIREBASE <br/>
+✅  FIREBASE
 <ul>- Authentication</ul> 
-      - Firestore Database (w/ Real-time data) <br/>
-      - Cloud Functions <br/>
-      - Firebase Storage <br/>
-      - Security Rules <br/>
-      - Transactions & Batch Writes <br/>
-      🚀  Deployment <br/>
+<ul>- Firestore Database (w/ Real-time data) <br/></ul>
+<ul>- Cloud Functions <br/></ul>
+<ul>- Firebase Storage <br/></ul>
+<ul>- Security Rules <br/></ul>
+<ul>- Transactions & Batch Writes <br/></ul>
+<ul>🚀  Deployment <br/></ul>
 ✅  CHAKRA UI <br/>
 ✅  TYPESCRIPT <br/>
 ✅  RECOIL (State Management) <br/>
