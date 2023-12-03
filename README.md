@@ -7,12 +7,12 @@ Build Technologies: <br/>
 ✅  NEXTJS <br/>
 ✅  FIREBASE
 <ul>- Authentication</ul> 
-<ul>- Firestore Database (w/ Real-time data) <br/></ul>
-<ul>- Cloud Functions <br/></ul>
-<ul>- Firebase Storage <br/></ul>
-<ul>- Security Rules <br/></ul>
-<ul>- Transactions & Batch Writes <br/></ul>
-<ul>🚀  Deployment <br/></ul>
+<ul>- Firestore Database (w/ Real-time data)</ul>
+<ul>- Cloud Functions</ul>
+<ul>- Firebase Storage</ul>
+<ul>- Security Rules</ul>
+<ul>- Transactions & Batch Writes</ul>
+<ul>🚀  Deployment</ul>
 ✅  CHAKRA UI <br/>
 ✅  TYPESCRIPT <br/>
 ✅  RECOIL (State Management) <br/>
