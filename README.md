@@ -7,14 +7,14 @@ Build Technologies: <br/>
 ✅  FIREBASE V9 <br/>
       - Authentication <br/>
       - Firestore Database (w/ Real-time data) <br/>
-      - Cloud Functions
-      - Firebase Storage
-      - Security Rules
-      - Transactions & Batch Writes
-      🚀  Deployment
-✅  CHAKRA UI
-✅  TYPESCRIPT
-✅  RECOIL (State Management)
+      - Cloud Functions <br/>
+      - Firebase Storage <br/>
+      - Security Rules <br/>
+      - Transactions & Batch Writes <br/>
+      🚀  Deployment <br/>
+✅  CHAKRA UI <br/>
+✅  TYPESCRIPT <br/>
+✅  RECOIL (State Management) <br/>
 
 Lesson source: [FCC Reddit Clone](https://www.youtube.com/watch?v=rCm5RVYKWVg) by Shadee Merhi.
 
