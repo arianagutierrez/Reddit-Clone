@@ -156,7 +156,7 @@ const useCommunityData = () => {
             return;
         }
         getMySnippets();
-    }, [user]);
+    }, [user, getMySnippets]);
 
     useEffect(() => {
         const { communityId } = router.query;
