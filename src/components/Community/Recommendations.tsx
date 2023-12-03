@@ -101,6 +101,7 @@ const Recommendations: React.FC = () => {
                                         {item.imageURL ? (
                                             <Image
                                                 src={item.imageURL}
+                                                alt="imageURL"
                                                 borderRadius="full"
                                                 boxSize="28px"
                                                 mr={2}

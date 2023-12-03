@@ -106,7 +106,7 @@ const SearchInput: React.FC<SearchInputProps> = ({ user }) => {
                         placeItems="center"
                     >
                         {community.imageURL ? (
-                            <Image src={community.imageURL} borderRadius="full" boxSize="18px" mr={2} />
+                            <Image src={community.imageURL} alt="imageURL" borderRadius="full" boxSize="18px" mr={2} />
                         ) : (
                             <Icon as={FaReddit} fontSize={20} mr={2} color={'gray'} />
                         )}

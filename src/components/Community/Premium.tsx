@@ -64,7 +64,7 @@ const Premium: React.FC = () => {
                         justifyContent="center"
                         fontSize="25px"
                     >
-                        <Text>We're sorry,</Text>
+                        <Text>Sorry, </Text>
                         <Text
                             color="red"
                             fontSize="25px"

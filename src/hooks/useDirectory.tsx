@@ -63,7 +63,7 @@ const useDirectory = () => {
             ...prev,
             selectedMenuItem: defaultMenuItem,
         }));
-    }, [communityStateValue.currentCommunity]);
+    }, [communityStateValue.currentCommunity, setDirectoryState]);
 
     useEffect(() => {
         const { communityId } = router.query;
@@ -74,7 +74,7 @@ const useDirectory = () => {
             currentCommunity: undefined,
         }));
         }
-    }, [router.query]);
+    }, [router.query, setCommunityStateValue]);
 
     return { directoryState, toggleMenuOpen, onSelectMenuItem };
 };

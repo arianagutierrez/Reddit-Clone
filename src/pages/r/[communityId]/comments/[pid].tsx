@@ -40,7 +40,7 @@ const PostPage:React.FC= () => {
         if (pid && !postStateValue.selectedPost) {
           fetchPost(pid as string);
         }
-    }, [router.query, postStateValue.selectedPost]);
+    }, [router.query, postStateValue.selectedPost, fetchPost]);
 
     return (
         <PageContent>

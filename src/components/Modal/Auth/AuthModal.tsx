@@ -13,15 +13,15 @@ const AuthModal:React.FC = () => {
     const [user, loading, error] = useAuthState(auth);
 
     const handleClose = () =>
-    setModalState((prev) => ({
-      ...prev,
-      open: false,
+        setModalState((prev) => ({
+        ...prev,
+        open: false,
     }));
 
     useEffect(() => {
         if (user) handleClose();
         console.log('user', user)
-    }, [user]);
+    }, [user, handleClose()]);
     
     return (
         <>

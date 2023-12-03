@@ -22,6 +22,7 @@ const ImageUpload:React.FC<ImageUploadProps> = ({
                 <>
                     <Image 
                         src={selectedFile} 
+                        alt='imageUrl'
                         maxWidth="400px" 
                         maxHeight="400px" 
                     />
@@ -64,7 +65,7 @@ const ImageUpload:React.FC<ImageUploadProps> = ({
                         hidden
                         onChange={onSelectImage}
                     />
-                    <img src={selectedFile} />
+                    <Image src={selectedFile} alt='imageUrl'/>
                 </Flex>
             )}
         </Flex>

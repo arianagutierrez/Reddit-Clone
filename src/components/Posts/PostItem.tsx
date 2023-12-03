@@ -126,6 +126,7 @@ const PostItem:React.FC<PostItemProps> = ({
                             {post.communityImageURL ? (
                                 <Image
                                     src={post.communityImageURL}
+                                    alt='communityImage'
                                     borderRadius="full"
                                     boxSize="18px"
                                     mr={2}

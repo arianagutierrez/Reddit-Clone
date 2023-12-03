@@ -35,6 +35,7 @@ const Directory: React.FC = () => {
                         {directoryState.selectedMenuItem.imageURL ? (
                             <Image
                                 src={directoryState.selectedMenuItem.imageURL}
+                                alt="imageURL"
                                 borderRadius="full"
                                 boxSize="24px"
                                 mr={2}

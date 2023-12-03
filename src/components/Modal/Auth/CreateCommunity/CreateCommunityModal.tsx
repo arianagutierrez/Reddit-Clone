@@ -152,7 +152,7 @@ const CreateCommunity:React.FC<CreateCommunityProps> = ({
                                 <Text fontWeight={600} fontSize={15}>
                                     Community Type
                                 </Text>
-                                <Stack spacing={2} pt={1}> //used to create a vertical or horizontal stack of components. It helps in organizing and laying out components in a structured manner.
+                                <Stack spacing={2} pt={1}> {/* used to create a vertical or horizontal stack of components. It helps in organizing and laying out components in a structured manner. */}
                                     <Checkbox
                                         colorScheme="blue"
                                         name="public"
