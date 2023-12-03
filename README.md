@@ -2,10 +2,10 @@
 
 This is a [Reddit Clone](https://reddit-clone-ten-gray.vercel.app/) REACTJS project.
 
+
 Build Technologies: <br/>
 ✅  NEXTJS <br/>
 ✅  FIREBASE V9 <br/>
-<div style="text-align: right;">Testo allineato a destra</div>
       - Authentication <br/>
       - Firestore Database (w/ Real-time data) <br/>
       - Cloud Functions <br/>
@@ -16,6 +16,7 @@ Build Technologies: <br/>
 ✅  CHAKRA UI <br/>
 ✅  TYPESCRIPT <br/>
 ✅  RECOIL (State Management) <br/>
+
 
 Lesson source: [FCC Reddit Clone](https://www.youtube.com/watch?v=rCm5RVYKWVg) by Shadee Merhi.
 
