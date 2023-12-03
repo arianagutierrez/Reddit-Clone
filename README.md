@@ -2,11 +2,11 @@
 
 This is a [Reddit Clone](https://reddit-clone-ten-gray.vercel.app/) REACTJS project.
 
-Build Technologies:
-✅  NEXTJS
-✅  FIREBASE V9
-      - Authentication
-      - Firestore Database (w/ Real-time data)
+Build Technologies: <br/>
+✅  NEXTJS <br/>
+✅  FIREBASE V9 <br/>
+      - Authentication <br/>
+      - Firestore Database (w/ Real-time data) <br/>
       - Cloud Functions
       - Firebase Storage
       - Security Rules
@@ -16,7 +16,7 @@ Build Technologies:
 ✅  TYPESCRIPT
 ✅  RECOIL (State Management)
 
-Lesson source: [freeCodeCamp Reddit Clone](https://www.youtube.com/watch?v=rCm5RVYKWVg) by Shadee Merhi.
+Lesson source: [FCC Reddit Clone](https://www.youtube.com/watch?v=rCm5RVYKWVg) by Shadee Merhi.
 
 ## Deploy on Vercel
 
