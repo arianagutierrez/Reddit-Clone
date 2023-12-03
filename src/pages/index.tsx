@@ -157,6 +157,7 @@ const Home: NextPage = () => {
           </Stack>
         )}
       </>
+      
       <Stack spacing={5}>
         <Recommendations />
         <Premium />
