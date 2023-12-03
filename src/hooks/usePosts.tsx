@@ -200,7 +200,7 @@ const usePosts = () => {
     useEffect(() => {
         if (!user || !currentCommunity?.id) return;
         getCommunityPostVotes(currentCommunity?.id);
-    }, [user, currentCommunity, getCommunityPostVotes]);
+    }, [user, currentCommunity]);
 
     useEffect(() => {
         if (!user) {
@@ -210,7 +210,7 @@ const usePosts = () => {
                 postVotes: [],
             }));
         }
-    }, [user, setPostStateValue]);
+    }, [user]);
 
     return {
         postStateValue,

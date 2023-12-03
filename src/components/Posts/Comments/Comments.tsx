@@ -130,7 +130,7 @@ const Comments:React.FC<CommentsProps> = ({
     useEffect(() => {
         if (!selectedPost) return;
         getPostComments();
-    }, [selectedPost, getPostComments]);
+    }, [selectedPost]);
 
     return (
         <Box bg="white" borderRadius="0px 0px 4px 4px" p={2}>

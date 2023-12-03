@@ -112,11 +112,11 @@ const Home: NextPage = () => {
   //useEffects
   useEffect(() => {
     if (communityStateValue.snippetsFetched) buildUserHomeFeed();
-  }, [communityStateValue.snippetsFetched, buildUserHomeFeed]);
+  }, [communityStateValue.snippetsFetched]);
 
   useEffect(() => {
     if (!user && !loadingUser) buildNoUserHomeFeed();
-  }, [user, loadingUser, buildNoUserHomeFeed]);
+  }, [user, loadingUser]);
 
   useEffect(() => {
     if (user && postStateValue.posts.length) getUserPostVotes();
@@ -128,7 +128,7 @@ const Home: NextPage = () => {
         postVotes: [],
       }));
     };
-  }, [user, postStateValue.posts, getUserPostVotes, setPostStateValue]);
+  }, [user, postStateValue.posts]);
 
   return (
     <PageContent>
