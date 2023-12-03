@@ -3,6 +3,7 @@
 This is a [Reddit Clone](https://reddit-clone-ten-gray.vercel.app/) REACTJS project.
 
 Build Technologies: <br/>
+✅  REACT <br/>
 ✅  NEXTJS <br/>
 ✅  FIREBASE <br/>
 ✅  CHAKRA UI <br/>
