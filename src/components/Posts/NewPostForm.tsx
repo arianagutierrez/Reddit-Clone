@@ -13,6 +13,7 @@ import { IoDocumentText, IoImageOutline } from 'react-icons/io5';
 import ImageUpload from './PostForm/ImageUpload';
 import TextInputs from './PostForm/TextInputs';
 import TabITem from './TabItem';
+import Link from 'next/link';
 
 type NewPostFormProps = {
     user: User;
