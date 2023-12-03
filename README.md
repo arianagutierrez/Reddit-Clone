@@ -1,6 +1,6 @@
 ## Reddit Clone
 
-This is a [Reddit Clone(https://reddit-clone-ten-gray.vercel.app/)]REACTJS project.
+This is a [Reddit Clone](https://reddit-clone-ten-gray.vercel.app/) REACTJS project.
 
 Build Technologies:
 ✅  NEXTJS
@@ -16,7 +16,7 @@ Build Technologies:
 ✅  TYPESCRIPT
 ✅  RECOIL (State Management)
 
-Lesson source: [freeCodeCamp Reddit Clone(https://www.youtube.com/watch?v=rCm5RVYKWVg)] by Shadee Merhi.
+Lesson source: [freeCodeCamp Reddit Clone](https://www.youtube.com/watch?v=rCm5RVYKWVg) by Shadee Merhi.
 
 ## Deploy on Vercel
 
