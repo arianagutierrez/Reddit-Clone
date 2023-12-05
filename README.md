@@ -10,7 +10,7 @@ Build Technologies: <br/>
 ✅  TYPESCRIPT <br/>
 ✅  RECOIL (State Management) <br/>
 
-Lesson source: [FCC Reddit Clone](https://www.youtube.com/watch?v=rCm5RVYKWVg) by Shadee Merhi.
+Lesson source: [FCC Reddit Clone](https://www.youtube.com/watch?v=rCm5RVYKWVg) by [Shadee Merhi](https://www.youtube.com/@shadmerhi). (Thank you very much to the professor! - Ariana)
 
 ## Deploy on Vercel
 
