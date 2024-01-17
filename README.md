@@ -1,6 +1,6 @@
 ## Reddit Clone
 
-This is a [Reddit Clone](https://reddit-clone-ten-gray.vercel.app/) REACTJS project.
+This is a [Reddit Clone](https://reddit-clone-arianagg.vercel.app/) REACTJS project.
 
 Build Technologies: <br/>
 ✅  REACT <br/>
