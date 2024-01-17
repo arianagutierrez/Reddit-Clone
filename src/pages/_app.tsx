@@ -1,19 +1,19 @@
-// import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
-import { ChakraProvider, extendTheme } from '@chakra-ui/react'
-import { theme } from '../chakra/theme'
-import Layout from '@/components/Layout/Layout'
-import { RecoilRoot } from 'recoil'
+/** @format */
+
+import type { AppProps } from 'next/app';
+import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+import { theme } from '../chakra/theme';
+import Layout from '@/components/Layout/Layout';
+import { RecoilRoot } from 'recoil';
 
 export default function App({ Component, pageProps }: AppProps) {
-  return(
+  return (
     <RecoilRoot>
-      <ChakraProvider theme = {theme}>
+      <ChakraProvider theme={theme}>
         <Layout>
           <Component {...pageProps} />
         </Layout>
       </ChakraProvider>
     </RecoilRoot>
-    
-  )
+  );
 }
